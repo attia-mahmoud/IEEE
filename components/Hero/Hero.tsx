@@ -26,7 +26,7 @@ export function Hero() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} size="lg">
+          <Button className={classes.control} size="md">
             Check out our events
           </Button>
         </div>

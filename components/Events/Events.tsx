@@ -35,7 +35,7 @@ export function Events() {
   ));
 
   return (
-    <Container py="xl" size="80rem">
+    <Container py="xl" size="60rem">
       <Title className={classes.heading}>Events</Title>
       <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
     </Container>
