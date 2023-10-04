@@ -17,7 +17,7 @@ export function Footer() {
       key={link.label}
       href={link.link}
       lh={1}
-      onClick={(event) => event.preventDefault()}
+      onClick={(event: any) => event.preventDefault()}
       size="sm"
     >
       {link.label}

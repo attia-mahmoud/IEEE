@@ -1,7 +1,7 @@
 import { Card, Image, Avatar, Text, Group, AspectRatio } from '@mantine/core';
 import classes from './EventCard.module.css';
 
-export function EventCard({ title, image, date }) {
+export function EventCard({ title, image, date }: { title: string; image: string; date: string }) {
   return (
     <Card key={title} p="md" radius="md" component="a" href="#" className={classes.card}>
       <AspectRatio ratio={1920 / 1080}>
