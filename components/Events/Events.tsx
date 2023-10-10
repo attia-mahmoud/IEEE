@@ -1,16 +1,17 @@
+import { Carousel } from '@mantine/carousel';
 import { SimpleGrid, Card, Image, Text, Container, AspectRatio, Title } from '@mantine/core';
 import { EventCard } from './EventCard';
 import classes from './EventCard.module.css';
 
 const mockdata = [
   {
-    title: 'Top 10 places to visit in Norway this summer',
+    title: 'Introductory Meeting',
     image:
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
     date: 'August 18, 2022',
   },
   {
-    title: 'Best forests to visit in North America',
+    title: 'Latex Workshop',
     image:
       'https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
     date: 'August 27, 2022',
@@ -35,9 +36,11 @@ export function Events() {
   ));
 
   return (
-    <Container py="xl" size="60rem">
+    <Container py="xl" className={classes.root} bg="white" fluid>
       <Title className={classes.heading}>Events</Title>
-      <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
+      <Container size="60rem">
+        <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
+      </Container>
     </Container>
   );
 }

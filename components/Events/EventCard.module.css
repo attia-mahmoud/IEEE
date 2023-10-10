@@ -1,5 +1,12 @@
+.root {
+  /* position: absolute;
+  width: 100%;
+  z-index: 1; */
+}
+
 .card {
   background-color: var(--mantine-color-body);
+  padding-bottom: 40px;
 
   transition: transform 150ms ease, box-shadow 150ms ease;
 
