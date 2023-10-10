@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Container, Group, Burger, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
+import Image from 'next/image';
+import logo from '../../public/logo-horizontal-black.png';
 
 const links = [
   { link: '/', label: 'Home' },
@@ -32,7 +34,7 @@ export function Header() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <Text>Logo goes here</Text>
+        <Image src={logo} width={280} height={70} alt="logo" />
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
