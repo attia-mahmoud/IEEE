@@ -1,6 +1,8 @@
 import { Anchor, Group, ActionIcon, rem, Text } from '@mantine/core';
 import { IconBrandTwitter, IconBrandLinkedin, IconBrandSnapchat } from '@tabler/icons-react';
 import classes from './Footer.module.css';
+import logo from '../../public/logo-horizontal-white.jpg';
+import Image from 'next/image';
 
 const links = [
   { link: '#', label: 'Events' },
@@ -27,7 +29,7 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <Text>Logo goes here</Text>
+        <Image src={logo} width={240} height={60} alt="logo" />
 
         <Group className={classes.links}>{items}</Group>
 

@@ -1,6 +1,7 @@
 .header {
   height: rem(64px);
   background-color: 'transparent';
+  position: 'fixed';
 }
 
 .inner {
