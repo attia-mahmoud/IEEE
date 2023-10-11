@@ -3,6 +3,7 @@ import { Events } from '../components/Events/Events';
 import { Footer } from '../components/Footer/Footer';
 import { useEffect, useRef, useState } from 'react';
 import { Articles } from '@/components/Articles/Articles';
+import { Timeline } from '@/components/Timeline/Timeline';
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -29,7 +30,6 @@ export default function HomePage() {
           className="bottom-component-wrapper"
           style={{
             transform: `translateY(${translateY}px)`,
-            // position: 'absolute',
             marginBottom: '-100vh',
             width: '100%',
             zIndex: 1,
@@ -38,6 +38,7 @@ export default function HomePage() {
         >
           <Events />
           <Articles />
+          <Timeline />
         </div>
       </div>
       <Footer />
