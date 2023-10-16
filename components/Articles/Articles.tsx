@@ -1,6 +1,16 @@
-import { SimpleGrid, Card, Image, Text, Container, AspectRatio, Title } from '@mantine/core';
+import {
+  SimpleGrid,
+  Card,
+  Image,
+  Text,
+  Container,
+  AspectRatio,
+  Title,
+  Button,
+} from '@mantine/core';
 import { ArticleCard } from './ArticleCard';
 import classes from '../Events/EventCard.module.css';
+import { IconArrowRight } from '@tabler/icons-react';
 
 const mockdata = [
   {
@@ -33,8 +43,15 @@ export function Articles() {
       <Title className={classes.heading} mb="xl">
         Articles
       </Title>
-      <Container size="60rem">
+      <Container size="60rem" className={classes.root}>
         <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
+        <Button
+          variant="light"
+          rightSection={<IconArrowRight size={14} />}
+          className={classes.button}
+        >
+          View All
+        </Button>
       </Container>
     </Container>
   );

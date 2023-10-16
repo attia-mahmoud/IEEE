@@ -2,6 +2,8 @@
   /* position: absolute;
   width: 100%;
   z-index: 1; */
+  position: relative;
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
 }
 
 .card {
@@ -41,4 +43,11 @@
     font-size: rem(28px);
     text-align: left;
   }
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 2rem;
 }
