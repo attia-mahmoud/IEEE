@@ -30,7 +30,7 @@ export default function HomePage() {
           className="bottom-component-wrapper"
           style={{
             transform: `translateY(${translateY}px)`,
-            marginBottom: '-100vh',
+            marginBottom: '-50rem',
             width: '100%',
             zIndex: 1,
           }}

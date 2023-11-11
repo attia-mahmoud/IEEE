@@ -32,6 +32,8 @@ export function Hero() {
               size="xl"
               className={classes.control}
               mt={40}
+              component="a"
+              // href="#events"
             >
               Check out our events
             </Button>
